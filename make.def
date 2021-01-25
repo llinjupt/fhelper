@@ -1,0 +1,32 @@
+# Cross compiler tools defined
+# CROSS_COMPILE ?= i686-pc-cygwin-
+CROSS_COMPILE ?= 
+
+CC      = $(CROSS_COMPILE)gcc 
+
+# The C Preprocessor
+CPP     = $(CROSS_COMPILE)cpp
+CXX     = $(CROSS_COMPILE)g++ 
+
+# Un-comment the following line to compile C programs 
+# as C++ ones. If need to call some C libs in these programs, 
+# don't forget to add extern "C" in the libs' .h files.
+# CC      = $(CXX)
+
+AS      = $(CROSS_COMPILE)as
+LD      = $(CROSS_COMPILE)ld
+CPP     = $(CC) -E
+AR      = $(CROSS_COMPILE)ar
+NM      = $(CROSS_COMPILE)nm
+STRIP   = $(CROSS_COMPILE)strip
+RANLIB  = $(CROSS_COMPILE)ranlib
+
+# local host tools defined
+CP      := cp
+RM      := rm
+MKDIR   := mkdir
+SED     := sed
+FIND    := find
+MKDIR   := mkdir
+XARGS   := xargs
+

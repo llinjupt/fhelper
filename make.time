@@ -1,0 +1,1 @@
+i686-pc-cygwin-gcc -g -O2 -MD -I/cygdrive/f/DOSUN/cygwin/fhelper-0.1/include -Wall -D_WIN32 -D_GNU_SOURCE -DMAKE_TIME="2021-01-15 22:07:20" -DVERSION="0.1" -c
