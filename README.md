@@ -6,7 +6,7 @@ Fhelper is a useful tool, which is designed to analyse the output of gcc/cc comp
 
 1. Edit make.def and update this line. Normally if your target platform is yor PC, just leave it here empty.
 
-'''CROSS_COMPILE ?='''
+  CROSS_COMPILE ?=
 
 2. $ make
 
@@ -16,22 +16,23 @@ After compiling successfully, you will find a new file named fhelper (Linux) or 
 
 1. fhelper.exe -h will tell you how to implement it.
 
-'''$ ./fhelper.exe -h
-Usage:
+$ ./fhelper.exe -h
 
-  fhelper <options>
+  Usage:
 
-where options may include:
+    fhelper <options>
 
-  --help -h        to output this message.
-  D or D           refresh the screen.
-  S or s           enable or disable refresh .
-  Arrows/pagedn/up scroll the list.
-  Q or q           quit.
-'''
+  where options may include:
+
+    --help -h        to output this message.
+    D or D           refresh the screen.
+    S or s           enable or disable refresh .
+    Arrows/pagedn/up scroll the list.
+    Q or q           quit.
 
 2. Run fhelper without -h, it will create a pipe file named /tmp/fhelper then runs as a daemon.
-'''$./fhelper '''
+  
+  $./fhelper 
 
 3. Put scripts/make.sh to your own program's dir where the Makefile located.
 then run ./make.sh or you just need run "make > /tmp/fhelper 2>&1" without the coworker make.sh, 
