@@ -161,7 +161,7 @@ static void usage(void)
           "where options may include:\n"
           "\n"
           "  --help -h        to output this message.\n"
-          "  D or D           refresh the screen.\n"
+          "  D or d           refresh the screen.\n"
           "  S or s           enable or disable refresh .\n"
           "  Arrows/pagedn/up scroll the list.\n"
           "  Q or q           quit.\n"
