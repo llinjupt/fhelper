@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Fhelper, powered by Eastforest Co., Ltd 
  *
  * Copyright (C) 2018-2021 Reid Liu  <lli_njupt@163.com>
@@ -564,7 +564,10 @@ int main(int argc, char *argv[])
       
       /* enable or disable auto refresh */
       if(c == 's')
+      {
         auto_refresh_reverse();
+        refresh_infos(screen_offset); /* show the auto refresh flag */
+      }
 
       /* 27 means a ctrl command */
       if(c == '\033')
